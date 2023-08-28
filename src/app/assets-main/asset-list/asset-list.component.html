@@ -1,0 +1,40 @@
+<!-- Button must be its own component so it has its own instance of variables -->
+
+        <label 
+        for="units">Enter the number of units
+        </label>
+        <br>
+
+        <input 
+        type="number" 
+        name="units" 
+        [(ngModel)] = "numberOfUnits">
+        <br>
+
+        <button 
+        class="btn btn-primary" 
+        type="submit"
+        >Submit</button>
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="button-background">
+            <div *ngFor="let n of [].constructor(numberOfUnits); let i = index">
+                <br>
+                <label for="{{n}}">HVAC{{i + 1}}</label>
+                <br>
+                <button
+                    class = "btn button-left"
+                    (click)="buttonClick()"
+                    [ngClass] = "colors[current]"
+                    name="{{n}}"
+                    >{{text}}
+                </button>
+                <button 
+                    class="button-right btn btn-primary"
+                    >info</button>
+            </div>
+        </div>
+    </div>
+    
+</div>
