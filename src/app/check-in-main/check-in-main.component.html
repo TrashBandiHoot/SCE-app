@@ -1,4 +1,6 @@
 <form>
+    <h1>Store Information</h1>
+
     <div class="form-row">
         <div class="form-group col-md-4">
             <label for="storeNumber">Store Number</label>
@@ -13,7 +15,27 @@
             <input type="date" class="form-control" id="date">
         </div>
 
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="phoneNumber">Phone Number</label>
+                <input type="tel" class="form-control">
+            </div>
+    
+            <div class="form-group col-md-3">
+                <label for="weekdayHours">Hours - Mon-Sat</label>
+                <input type="text" class="form-control" id="weekdayHours">
+            </div>
+    
+            <div class="form-group col-md-3">
+                <label for="weekdendHours">Hours - Sun</label>
+                <input type="text" class="form-control" id="weekendHours">
+            </div>
+        </div>
+
     </div>
+
+
+    <h1>Store Address</h1>
 
     <div class="form-row">
         <div class="form-group col-md-12">
@@ -21,8 +43,6 @@
             <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
         </div>
     </div>
-
-
 
     <div class="form-row">
         <div class="form-group col-md-6">
@@ -42,25 +62,46 @@
             <label for="inputZip">Zip</label>
             <input type="text" class="form-control" id="inputZip">
         </div>
-
-        
     </div>
+
+    <h1>Name Me Please</h1>
 
     <div class="form-row">
-        <div class="form-group col-md-6">
-            <label for="phoneNumber">Phone Number</label>
-            <input type="tel" class="form-control">
-        </div>
-
         <div class="form-group col-md-3">
-            <label for="weekdayHours">Hours - Mon-Sat</label>
-            <input type="text" class="form-control" id="weekdayHours">
+            <label for="changes">Changes requesgted by</label>
+            <input type="text" class="form-control" id="changes">
         </div>
-
         <div class="form-group col-md-3">
-            <label for="weekdendHours">Hours - Sun</label>
-            <input type="text" class="form-control" id="weekendHours">
+            <label for="portNumber">Jack/Port # if different from 13</label>
+            <input type="number" class="form-control" id="portNumber">
         </div>
-
+        <div class="form-group col-md-3">
+            <label for="controllerUpTime">Controller Communicating by</label>
+            <input type="time" class="form-control" id="controllerUpTime">
+        </div>
+        <div class="form-group col-md-3">
+            <label for="commissionTime">Ready for commission by</label>
+            <input type="time" class="form-control" id="commissionTime">
+        </div>
     </div>
+
+    <h1>Breaker Info</h1>
+
+    <div class="form-row">
+        <div class="form-group col-md-4">
+            <label for="esciBreaker">eSCI Panel/Breaker</label>
+            <input type="text" class="form-control" id="esciBreaker">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="powerMeter">Power Meter Panel/Breaker</label>
+            <input type="text" class="form-control" id="powerMeter">
+        </div>
+        <div class="form-group col-md-4">
+            <label for="phaseLoss">Phase Loss ref. Breakers</label>
+            <input type="text" class="form-control" id="phaseLoss">
+        </div>
+    </div>
+
+<!-- Daylight harvesting should be a checkbox with a hidden field -->
+
 </form>
