@@ -1,0 +1,41 @@
+button {
+    width: 150px;
+    padding: 15px 32px;
+    margin-top: 10px;
+    border-style: none;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+
+
+.button-left {
+    border-radius: 10px 0px 0px 10px;
+}
+
+.button-right {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.green {
+    background-color: #4CAF50;
+}
+
+.red {
+    background-color: #f44336;
+}
+
+.gray {
+    background-color: #e7e7e7;
+    color: black;
+}
+
+.yellow {
+    background-color: yellow;
+    color: black;
+}

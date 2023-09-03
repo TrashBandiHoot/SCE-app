@@ -8,6 +8,7 @@ import { AssetsMainComponent } from './assets-main/assets-main.component';
 import { AssetListComponent } from './assets-main/asset-list/asset-list.component';
 import { AssetDetailsComponent } from './assets-main/asset-details/asset-details.component';
 import { CheckInMainComponent } from './check-in-main/check-in-main.component';
+import { QuadButtonComponent } from './assets-main/asset-list/quad-button/quad-button.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CheckInMainComponent } from './check-in-main/check-in-main.component';
     AssetsMainComponent,
     AssetListComponent,
     AssetDetailsComponent,
-    CheckInMainComponent
+    CheckInMainComponent,
+    QuadButtonComponent
   ],
   imports: [
     BrowserModule,
