@@ -9,6 +9,7 @@ import { AssetListComponent } from './assets-main/asset-list/asset-list.componen
 import { AssetDetailsComponent } from './assets-main/asset-details/asset-details.component';
 import { CheckInMainComponent } from './check-in-main/check-in-main.component';
 import { QuadButtonComponent } from './assets-main/asset-list/quad-button/quad-button.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { QuadButtonComponent } from './assets-main/asset-list/quad-button/quad-b
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
